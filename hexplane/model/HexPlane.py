@@ -16,6 +16,9 @@ class HexPlane(HexPlane_Base):
         """
         Initialize the planes. density_plane is the spatial plane while density_line_time is the spatial-temporal plane.
         """
+
+        print(device)
+        
         self.density_plane, self.density_line_time = self.init_one_hexplane(
             self.density_n_comp, self.gridSize, device
         )
