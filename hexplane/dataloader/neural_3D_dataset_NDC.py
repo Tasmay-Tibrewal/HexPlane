@@ -305,7 +305,7 @@ class Neural3D_NDC_Dataset(Dataset):
             )
             all_times = torch.stack(all_times, 0)
             all_rays = torch.stack(all_rays, 0)
-            breakpoint()
+            #breakpoint()
             print("stack performed")
             N_cam, N_time, N_rays, C = all_imgs.shape
             self.image_stride = N_rays
